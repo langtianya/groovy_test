@@ -5,14 +5,17 @@ package groovy_test;
 class HelloAmos {
 
     public static void main(args) {
+        //各种print方式
         println("hello amosli !!");
 
         String name = "amosli";
-        println(name);
+        println name
+
 
         //定义变量的方式可以为def，即不指定类型，类似于js中的var
         def address = "shanghai";
-        println(address);
+        System.out.println(address);
+
         println(address.class);//class java.lang.String
 
         def age = 25;
@@ -26,6 +29,7 @@ class HelloAmos {
     }
 
     static def repeat(val) {
+        //各种for循环写法
 
         //指定i的值为int类型
         for (int i = 0; i < 5; i++) {
@@ -44,7 +48,7 @@ class HelloAmos {
 
         //用in来进行循环，这里本例是从1到4
         for (i in 1..<5) {
-            println(i + " " + val);
+            println("特殊拼接字符串：${i},${val}")
         }
 
     }
