@@ -5,6 +5,7 @@ package groovy_test;
 class HelloAmos {
 
     public static void main(args) {
+
         //各种print方式
         println("hello amosli !!");
 
@@ -26,6 +27,8 @@ class HelloAmos {
         loop("hello,amos!", 2);
         loop("hello!", 3);
         loop("default loop");
+
+
     }
 
     static def repeat(val) {
